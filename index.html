@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+　<!-- DOCTYPE html -> HTML文書が最新の仕様に従っている旨の宣言 -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML-template</title>
+  </head>
+
+  <body>
+    <!--  基本なタグ -->
+
+    <!-- 1 見出し <h1~h6> -->
+    <h1>1 見出し</h1>
+    <h2>見出し h2</h2>
+    <h3>見出し h3</h3>
+    <h4>見出し h4</h4>
+    <h5>見出し h5</h5>
+    <h6>見出し h6</h6>
+
+    <!-- 2 段落 <p> -->
+    <h1>2 段落 p</h1>
+    <p>最初の段落。段落を分けたいときにはPタグを分ける。</p>
+    <p>次の段落。</p>
+
+    <!-- 3 改行 <br> -->
+    <h1>3 改行 br</h1>
+    <p>最初の段落。<br />段落の途中で分けたいときにはbrタグで改行。</p>
+
+    <!-- 4 イメージ <img> -->
+    <h1>4 イメージ img</h1>
+    <img
+      src="https://cdn.glitch.global/d456f789-0657-4c78-9eef-e0ae3a3ef995/sample_image.png?v=1742284058562"
+      alt="sample image(画像が読み込めないときの表示文字はaltで指定)"
+    />
+
+    <!-- 5 リンク <a> -->
+    <h1>5 リンク a</h1>
+    <a href="https://jpn.nec.com/index.html">NECのページへ遷移</a>
+
+    <!-- 6 リスト <ol><ul><li> -->
+    <h1>6 リスト</h1>
+    <h2>6.1 順序あり ol/li</h2>
+    <ol>
+      <li>項目1</li>
+      <li>項目2</li>
+      <li>項目3</li>
+    </ol>
+
+    <h2>6.2 順序なし ul/li</h2>
+    <ul>
+      <li>項目1</li>
+      <li>項目2</li>
+      <li>項目3</li>
+    </ul>
+
+    <!-- 7 表 <table/tr/th/td> -->
+    <h1>7 テーブル table/tr/th/td</h1>
+    <table>
+      <tr>
+        <th>header1</th>
+        <th>header2</th>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td>b</td>
+      </tr>
+      <tr>
+        <td>c</td>
+        <td>d</td>
+      </tr>
+    </table>
+
+    <!-- 8 フォーム <form>-->
+    <h1>8 フォーム form</h1>
+    <!-- 8.1 文字入力+ボタン -->
+    <h2>8.1 文字入力+ボタン input-text/button</h2>
+    <form>
+      <input type="text" placeholder="名前" />
+      <input type="text" placeholder="年齢" />
+      <input type="text" placeholder="性別" />
+      <button type="submit">送信!</button>
+    </form>
+
+    <!-- 8.2 選択 -->
+    <h2>8.2 選択 select</h2>
+    <form>
+      <select>
+        <option>選択1</option>
+        <option>選択2</option>
+        <option selected>選択3</option>
+      </select>
+    </form>
+
+    <!-- 8.3 選択 -->
+    <h2>8.3 ラジオボタン input-radio</h2>
+    <form>
+      <input type="radio" name="sample" checked /> 項目1
+      <input type="radio" name="sample" /> 項目2
+      <input type="radio" name="sample" /> 項目3
+    </form>
+
+    <!-- 8.4 選択 -->
+    <h2>8.4 チェックボックス input-checkbox</h2>
+    <form>
+      <input type="checkbox" name="sample" /> 項目1
+      <input type="checkbox" name="sample" /> 項目2
+      <input type="checkbox" name="sample" /> 項目3
+    </form>
+
+    <!-- 9 グループ化(汎用的) -->
+    <h1>9 グループ化(汎用的) div</h1>
+    <div style="color: red">
+      <p>段落1 divタグで段落2と共通の属性(例:文字を赤)をまとめて付与</p>
+      <p>段落2 divタグで段落1と共通の属性(例:文字を赤)をまとめて付与</p>
+    </div>
+
+    <!-- 10 グループ化(セマンティック:意味ある) -->
+    <h1>10 グループ(セマンティック) header/main/footerなど</h1>
+    <header>header:ページのタイトルやナビゲーションなどをグループ化</header>
+    <main>main:ページの主要コンテンツをグループ化</main>
+    <footer>footer:ページの末尾の問い合わせ先などをグループ化</footer>
+  </body>
+</html>
