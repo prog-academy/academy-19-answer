@@ -1,0 +1,16 @@
+/* classセレクタの指定 */
+/* fruit-class */
+.fruit {
+  color: red;
+}
+
+/* idセレクタの指定 */
+/* orange-id */
+#orange {
+  color: orange;
+}
+
+/* lemon-id */
+#lemon {
+  color: greenyellow;
+}

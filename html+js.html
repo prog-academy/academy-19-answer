@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML+css-template</title>
+
+    <style>
+      div {
+        color: green;
+      }
+      #id1 {
+        color: blue;
+      }
+      #id2 {
+        color: brown;
+      }
+      .class1 {
+        color: violet;
+      }
+    </style>
+
+    <link href="style.css" rel="stylesheet" />
+    　
+  </head>
+
+  <body>
+    <h1>1. CSSセレクタの書き方</h1>
+
+    <h2>1.1 要素セレクタ(div)をstyleタグに記述(green)</h2>
+    <div>div</div>
+
+    <h2>1.2 idセレクタ(#id1)をstyleタグに記述(blue)</h2>
+    <div id="id1">#id1 idはページで1度のみ利用可能</div>
+
+    <h2>1.3 classセレクタ(.class1)をstyleタグに記述(violet)</h2>
+    <div class="class1">.class1　classはページで複数回利用可能</div>
+    <div class="class1">.class1　classはページで複数回利用可能</div>
+
+    <h1>2. CSSセレクタの基本的な優先順位</h1>
+
+    <h2>2.1 classセレクタと要素セレクタの優先度</h2>
+    <div class="class1">.class1(violet),div(green)</div>
+
+    <h2>2.2 idセレクタとclassセレクタの優先度</h2>
+    <div id="id2" class="class1">#id2(brown),.class1(violet)</div>
+
+    <h2>2.3 インラインスタイルシート(red)と要素,id,classの優先度</h2>
+    <div class="class1" style="color: red">.class1(violet),inline-css(red)</div>
+
+    <h1>3. CSSの外部参照</h1>
+    <h2>3.1 22行目のlink href="style.css" rel="stylesheet"にて外部参照</h2>
+    <ul>
+      <li class="fruit">リンゴ(red)</li>
+      <li id="lemon">レモン(greenyellow)</li>
+      <li class="fruit">イチゴ(red)</li>
+      <li id="orange">オレンジ(orange)</li>
+    </ul>
+
+    <!-- sample1.jsのスクリプトを処理したいときは、scriptタグ(60行目)のコメントをアンコメント -->
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
